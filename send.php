@@ -9,16 +9,23 @@ if(isset($_POST['firstname']) && isset($_POST['lastname']) && isset($_POST['emai
 
 	$mail = new PHPMailer();
 
+  $mail->isSendmail();
+
 	$mail->From = $email;
 	$mail->CharSet = "UTF-8";
 	$mail->FromName = $email;
-	$mail->addAddress("info@jamesturnbull.net"); 
+	$mail->addAddress("info@jamesturnbull.net");
 
 	$mail->IsHTML(true);
-	$mail->Subject = $name." sent you an email";
+	$mail->Subject = $firstname." ".$lastname." sent you an email";
 
-	$mail->Body = $message."<br><br>".$name."<br>".$email."<br>".$phone."<br>";
+	$mail->Body = $message."<br><br>".$firstname." ".$lastname."<br>".$email."<br>"."<br>";
 
-	$mail->send();
+  if(!$mail->send()) {
+    echo 'Message could not be sent.';
+    echo 'Mailer Error: ' . $mail->ErrorInfo;
+  } else {
+    echo 'Message has been sent';
+  }
 }
 ?>
