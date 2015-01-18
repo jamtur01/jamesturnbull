@@ -16,9 +16,8 @@ $(document).ready(function() {
     //gather the form data
 
     var data = {};
-                data.domain = $("#domain").val();
-    data.firstname = $("#firstname").val();
-                data.lastname = $("#lastname").val();
+    data.domain = $("#domain").val();
+    data.name = $("#name").val();
     data.email = $("#email").val();
     data.message = $("#message").val();
 
@@ -27,10 +26,12 @@ $(document).ready(function() {
       success:function() {
         console.log("Success");
         $('#response').html('Email successful!').addClass('success').fadeIn('fast');
+        $('#commentForm')[0].reset();
       },
       error:function(e) {
         console.dir(e);
         $('#response').html('Error! Email unsuccessful!').addClass('error').fadeIn('fast');
+        $('#commentForm')[0].reset();
       }
     });
   });
