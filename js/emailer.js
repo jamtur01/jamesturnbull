@@ -1,6 +1,8 @@
 /* global $,document,console,Parse */
 $(document).ready(function() {
 
+  $(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
+
   var parseAPPID = "qUuHzxAXp3NzzlzWMucgwRVuwH6J5DzB4TyKxDb0";
   var parseJSID = "Ps8CC01aj7qskZr1bVtbfZdm85OO962wlwUiXm81";
 
