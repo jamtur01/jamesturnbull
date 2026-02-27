@@ -1,369 +1,140 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <!-- ==========================
-      Meta Tags
-    =========================== -->
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- ==========================
-      Title
-    =========================== -->
-    <title>James Turnbull</title>
-
-    <!-- ==========================
-      Favicons
-    =========================== -->
-    <link rel="shortcut icon" href="//jamesturnbull.net/icons/favicon.ico">
-  <link rel="apple-touch-icon" href="//jamesturnbull.net/icons/apple-touch-icon.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="//jamesturnbull.net/icons/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="//jamesturnbull.net/icons/apple-touch-icon-114x114.png">
-
-    <!-- ==========================
-      Fonts
-    =========================== -->
-    <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Lilita+One' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans+SC' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-
-
-    <!-- ==========================
-      CSS
-    =========================== -->
-    <link href="//jamesturnbull.net/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="//jamesturnbull.net/css/animate.css" rel="stylesheet" type="text/css">
-    <link href="//jamesturnbull.net/css/creative-brands.css" rel="stylesheet" type="text/css">
-    <link href="//jamesturnbull.net/css/vertical-carousel.css" rel="stylesheet" type="text/css">
-    <link href="//jamesturnbull.net/css/custom.css" rel="stylesheet" type="text/css">
-
-    <!-- ==========================
-      JS
-    =========================== -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>James Turnbull</title>
+  <meta name="description" content="James Turnbull — SVP of Engineering at Convergint. Author of 11 technical books on monitoring, infrastructure, and DevOps.">
+  <meta property="og:title" content="James Turnbull">
+  <meta property="og:description" content="SVP of Engineering at Convergint. Author, open source developer.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jamesturnbull.net">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body id="page-top">
-  <a href="#page-top" class="scroll-up scroll"><i class="fa fa-chevron-up"></i></a>
+<body>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#books">Books</a>
+    <a href="https://www.kartar.net">Blog</a>
+    <a href="mailto:james@lovedthanlost.net">Contact</a>
+  </nav>
+
+  <div class="hero">
+    <img src="image/1527955908551.jpeg" alt="James Turnbull" class="hero-photo">
     <h1>James Turnbull</h1>
-
-    <!-- ==========================
-      HEADER - START
-    =========================== -->
-    <header>
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavigation"><i class="fa fa-bars"></i></button>
-                    <img src="//jamesturnbull.net/image/james.jpg" class="navbar-logo pull-left" alt="" />
-                    <a href="//jamesturnbull.net/index.html" class="navbar-brand animated flipInX">James Turnbull</a>
-                </div>
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="myNavigation">
-
-                    <ul class="nav navbar-nav navbar-right animated flipInX">
-                        <li><a href="#about" class="scroll">About me</a></li>
-                        <li><a href="#books" class="scroll">Books</a></li>
-                        <li><a href="https://www.kartar.net" class="scroll" target="_blank">Blog</a></li>
-                        <li><a href="#contact" class="scroll">Contact</a></li>
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container -->
-        </nav>
-
-        <div class="jumbotron">
-            <img src="//jamesturnbull.net/image/james-286x300.jpg" class="img-responsive scrollpoint sp-effect3" alt="" />
-            <div class="social-wrapper">
-                <ul class="brands brands-inline hidden-xs scrollpoint sp-effect1">
-                    <li><a href="https://twitter.com/kartar"><i class="fa fa-twitter"></i></a></li>
-                </ul>
-                <h2 class="scrollpoint sp-effect3">James Turnbull</h2>
-                <ul class="brands brands-inline hidden-xs scrollpoint sp-effect2">
-                    <li><a href="https://www.linkedin.com/in/turnbulljames"><i class="fa fa-linkedin"></i></a></li>
-                </ul>
-            </div>
-        <a href="#about" class="btn btn-reference btn-lg scroll scrollpoint sp-effect1" role="button"><i class="fa fa-smile-o"></i> About Me</a>
-        <a href="#books" class="btn btn-reference btn-lg scroll scrollpoint sp-effect2" role="button"><i class="fa fa-book"></i> Books</a>
-        <a href="https://www.kartar.net" target="_blank" class="btn btn-reference btn-lg scroll scrollpoint sp-effect3" role="button"><i class="fa fa-bolt"></i> Blog</a>
-        <a href="#contact" class="btn btn-reference btn-lg scroll scrollpoint sp-effect3" role="button"><i class="fa fa-bolt"></i> Contact</a>
-        </div>
-    </header>
-    <!-- ==========================
-      HEADER - END
-    =========================== -->
-
-    <!-- ==========================
-      ABOUT - START
-    =========================== -->
-    <section id="about" class="content-first">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-2 hidden-xs scrollpoint sp-effect1"><!-- Profile image -->
-                  <img src="//jamesturnbull.net/image/james-150x150.jpg" class="image-bordered img-responsive" alt="" />
-                </div><!-- Profile end -->
-
-		<div class="col-md-7 col-sm-6 scrollpoint sp-effect1"><!-- Profile description --> <h3>James Turnbull</h3> <p>James Turnbull is an engineering leader, author, and open source developer. James is the CTO at Smartrr, an e-commerce company in the Shopify ecosystem. He was formerly the VP of Engineering at Timber (acquired by Datadog),CTO-in-residence at Microsoft, CTO/Founder at Empatico, and CTO at Kickstarter and in leadership roles at Docker, Venmo, and Puppet. James was chair of O'Reilly's Velocity conference, advises a number of startups, as well as writing and teaching.</p>
-                </div><!-- Profile description end-->
-
-              </div><!--col 3 end-->
-
-            </div><!--Row about end-->
-
-        </div><!-- Container end-->
-
-    </section>
-    <!-- ==========================
-      ABOUT - END
-    =========================== -->
-
-    <!-- ==========================
-      REFERENCE - START
-    =========================== -->
-    <section id="books" class="content-second">
-        <h2 class="scrollpoint sp-effect3">Books</h2>
-      <ul class="grid cs-style-4">
-     <li>
-      <figure class="scrollpoint sp-effect1">
-        <div><img src="//jamesturnbull.net/image/pm.jpg" alt="monitoring with prometheus"></div>
-        <figcaption>
-          <h3>Monitoring With Prometheus</h3>
-          <a href="https://prometheusbook.com" target="_blank">Show me</a>
-        </figcaption>
-      </figure>
-    </li>
-
-    <li>
-      <figure class="scrollpoint sp-effect1">
-        <div><img src="//jamesturnbull.net/image/pb.jpg" alt="the packer book"></div>
-        <figcaption>
-          <h3>The Packer Book</h3>
-          <a href="https://packerbook.com" target="_blank">Show me</a>
-        </figcaption>
-      </figure>
-    </li>
-
-        <li>
-          <figure class="scrollpoint sp-effect1">
-            <div><img src="//jamesturnbull.net/image/tf.jpg" alt="the terraform book"></div>
-            <figcaption>
-              <h3>The Terraform Book</h3>
-              <a href="https://terraformbook.com" target="_blank">Show me</a>
-            </figcaption>
-          </figure>
-        </li>
-
+    <ul class="social-links">
       <li>
-          <figure class="scrollpoint sp-effect1">
-            <div><img src="//jamesturnbull.net/image/aom.jpg" alt="art of monitoring"></div>
-            <figcaption>
-              <h3>The Art of Monitoring</h3>
-              <a href="https://artofmonitoring.com" target="_blank">Show me</a>
-            </figcaption>
-          </figure>
-        </li>
+        <a href="https://www.linkedin.com/in/turnbulljames" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/jamtur01" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
 
-        <li>
-          <figure class="scrollpoint sp-effect1">
-            <div><img src="//jamesturnbull.net/image/db.jpg" alt="docker"></div>
-            <figcaption>
-              <h3>The Docker Book</h3>
-              <a href="https://dockerbook.com" target="_blank">Show me</a>
-            </figcaption>
-          </figure>
-        </li>
-
-                <li>
-          <figure class="scrollpoint sp-effect3">
-            <div><img src="//jamesturnbull.net/image/ls.png" alt="logstash"></div>
-            <figcaption>
-              <h3>The Logstash Book</h3>
-              <a href="https://logstashbook.com" target="_blank">Show me</a>
-            </figcaption>
-          </figure>
-        </li>
-
-                <li>
-          <figure class="scrollpoint sp-effect2">
-            <div><img src="//jamesturnbull.net/image/pp-237x300.png" alt="propuppet"></div>
-            <figcaption>
-              <h3>Pro Puppet</h3>
-              <a href="http://tinyurl.com/ppuppet2" target="_blank">Show me</a>
-            </figcaption>
-          </figure>
-        </li>
-
-                <li>
-          <figure class="scrollpoint sp-effect1">
-            <div><img src="//jamesturnbull.net/image/prolin-237x300.png" alt="prolinux"></div>
-            <figcaption>
-              <h3>Pro Linux Systems Admin</h3>
-              <a href="http://tinyurl.com/linuxadmin" target="_blank">Show me</a>
-            </figcaption>
-          </figure>
-        </li>
-
-                <li>
-          <figure class="scrollpoint sp-effect3">
-            <div><img src="//jamesturnbull.net/image/pullstring-237x300.png" alt="pullstring"></div>
-            <figcaption>
-              <h3>Pulling Strings with Puppet</h3>
-              <a href="" target="_blank">Show me</a>
-            </figcaption>
-          </figure>
-        </li>
-
-                <li>
-          <figure class="scrollpoint sp-effect3">
-            <div><img src="//jamesturnbull.net/image/pronag-237x300.png" alt="img04"></div>
-            <figcaption>
-              <h3>Pro Nagios 2.0</h3>
-              <a href="http://tinyurl.com/pronagios" target="_blank">Show me</a>
-            </figcaption>
-          </figure>
-        </li>
-
-                <li>
-          <figure class="scrollpoint sp-effect2">
-            <div><img src="//jamesturnbull.net/image/hardl-237x300.png" alt="hardl"></div>
-            <figcaption>
-              <h3>Hardening Linux</h3>
-              <a href="http://tinyurl.com/hardeninglinux" target="_blank">Show me</a>
-            </figcaption>
-          </figure>
-        </li>
-
-      </ul>
-
+  <section id="about" class="about">
+    <h2 class="section-title">About</h2>
+    <p>James Turnbull is an engineering leader, author, and open source developer. James is SVP of Engineering at Convergint. He was formerly the CTO at Smartrr, VP of Engineering at Timber (acquired by Datadog), CTO-in-residence at Microsoft, CTO/Founder at Empatico, and CTO at Kickstarter and in leadership roles at Docker, Venmo, and Puppet. James was chair of O'Reilly's Velocity conference, advises a number of startups, as well as writing and teaching.</p>
   </section>
-    <!-- ==========================
-      REFERENCE - END
-    =========================== -->
 
-    <!-- ==========================
-      CONTACT - START
-    =========================== -->
-    <section id="contact" class="content-first">
-        <div class="container">
-          <h2 class="scrollpoint sp-effect3">Contact me</h2>
-            <div class="contact-alert">
-            </div>
-            <div class="row">
-            <!-- PRICING TABLE FIRST - start -->
-                <div class="col-sm-12">
-                  <img src="//jamesturnbull.net/image/macbook.png" class="img-responsive hidden-xs" alt="">
-
-                    <div class="macbook-inner black">
-                      <div class="row scrollpoint sp-effect4">
-                          <div class="col-sm-8">
-                              <h3 class="hidden-xs">Leave a message</h3>
-
-                                <div id="response"></div>
-
-                                <br />
-
-                                <form role="form" id="commentForm" method="POST" data-netlify="true" netlify>
-
-                                    <input type="hidden" id="domain" name="domain" value="jamesturnbull.net">
-                                    <input type="hidden" name="_next" value="//jamesturnbull.net/">
-                                    <input type="hidden" name="_subject" value="New submission!" />
-                                    <input type="text" name="_gotcha" style="display:none" />
-                                    <div class="form-group control-group">
-                                        <div class="controls">
-                                            <p class="help-block"></p>
-                                            <input type="text" class="form-control" placeholder="Name" name="name" id="name" data-validation-required-message="Please enter your name." aria-invalid="false">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group control-group">
-                                        <div class="controls">
-                                            <p class="help-block"></p>
-                                            <input type="email" class="form-control" placeholder="Email" name="_replyto" id="email" data-validation-required-message="Please enter your email address." aria-invalid="false">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group control-group">
-                                        <div class="controls">
-                                            <p class="help-block"></p>
-                                            <textarea class="form-control" placeholder="Message" name="message" id="message" data-validation-required-message="Please enter some message." aria-invalid="false"></textarea>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <button type="submit" class="btn btn-primary">Send message</button>
-                                    </div>
-                                </form>
-
-                            </div>
-                            <div class="col-sm-4">
-
-                            <img src="//jamesturnbull.net/image/james-150x150.jpg" class="contact-image image-responsive hidden-xs hidden-sm" alt="" />
-                              <div class="contact-info">
-                                  <p>James Turnbull</p>
-                                    <p>Brooklyn, NY, 11201</p>
-                                </div>
-                            </div>
-                      </div>
-                    </div>
-
-                </div>
-            </div>
+  <section id="books" class="books">
+    <h2 class="section-title">Books</h2>
+    <ul class="book-grid">
+      <li>
+        <img src="image/pm.jpg" alt="Monitoring with Prometheus">
+        <div class="book-overlay">
+          <h3>Monitoring with Prometheus</h3>
+          <a href="https://prometheusbook.com">View</a>
         </div>
-    </section>
-    <!-- ==========================
-      CONTACT - END
-    =========================== -->
-
-    <!-- ==========================
-      FOOTER - START
-    =========================== -->
-    <section id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 scrollpoint sp-effect3">
-
-                    <ul class="brands brands-inline">
-                            <li><a href="https://twitter.com/kartar"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/turnbulljames"><i class="fa fa-linkedin"></i></a></li>
-                        </ul>
-
-                    <p>© James Turnbull 2014-2016 All right reserved. Designed by <a href="http://pixelized.cz" target="_blank" class="btn btn-footer">Pixelized Studio</a></p>
-                </div>
-            </div>
+      </li>
+      <li>
+        <img src="image/pb.jpg" alt="The Packer Book">
+        <div class="book-overlay">
+          <h3>The Packer Book</h3>
+          <a href="https://packerbook.com">View</a>
         </div>
-    </section>
-    <!-- ==========================
-      FOOTER - END
-    =========================== -->
+      </li>
+      <li>
+        <img src="image/tf.jpg" alt="The Terraform Book">
+        <div class="book-overlay">
+          <h3>The Terraform Book</h3>
+          <a href="https://terraformbook.com">View</a>
+        </div>
+      </li>
+      <li>
+        <img src="image/aom.jpg" alt="The Art of Monitoring">
+        <div class="book-overlay">
+          <h3>The Art of Monitoring</h3>
+          <a href="https://artofmonitoring.com">View</a>
+        </div>
+      </li>
+      <li>
+        <img src="image/db.jpg" alt="The Docker Book">
+        <div class="book-overlay">
+          <h3>The Docker Book</h3>
+          <a href="https://dockerbook.com">View</a>
+        </div>
+      </li>
+      <li>
+        <img src="image/ls.png" alt="The Logstash Book">
+        <div class="book-overlay">
+          <h3>The Logstash Book</h3>
+          <a href="https://logstashbook.com">View</a>
+        </div>
+      </li>
+      <li>
+        <img src="image/pp-237x300.png" alt="Pro Puppet">
+        <div class="book-overlay">
+          <h3>Pro Puppet</h3>
+          <a href="http://tinyurl.com/ppuppet2">View</a>
+        </div>
+      </li>
+      <li>
+        <img src="image/prolin-237x300.png" alt="Pro Linux Systems Admin">
+        <div class="book-overlay">
+          <h3>Pro Linux Systems Admin</h3>
+          <a href="http://tinyurl.com/linuxadmin">View</a>
+        </div>
+      </li>
+      <li>
+        <img src="image/pullstring-237x300.png" alt="Pulling Strings with Puppet">
+        <div class="book-overlay">
+          <h3>Pulling Strings with Puppet</h3>
+        </div>
+      </li>
+      <li>
+        <img src="image/pronag-237x300.png" alt="Pro Nagios 2.0">
+        <div class="book-overlay">
+          <h3>Pro Nagios 2.0</h3>
+          <a href="http://tinyurl.com/pronagios">View</a>
+        </div>
+      </li>
+      <li>
+        <img src="image/hardl-237x300.png" alt="Hardening Linux">
+        <div class="book-overlay">
+          <h3>Hardening Linux</h3>
+          <a href="http://tinyurl.com/hardeninglinux">View</a>
+        </div>
+      </li>
+    </ul>
+  </section>
 
-    <!-- ==========================
-      JS
-    =========================== -->
-    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="//jamesturnbull.net/js/bootstrap.min.js"></script>
-    <script src="//jamesturnbull.net/js/creative-brands.js"></script>
-    <script src="//jamesturnbull.net/js/modernizr.custom.js"></script>
-    <script src="//jamesturnbull.net/js/waypoints.min.js"></script>
-    <script src="//jamesturnbull.net/js/jqBootstrapValidation.js"></script>
-    <script src="https://use.fontawesome.com/c3f1d0293f.js"></script>
-    <script src="//jamesturnbull.net/js/custom.js"></script>
-    <script type="text/javascript">
-      var _gauges = _gauges || [];
-      (function() {
-      var t   = document.createElement('script');
-      t.type  = 'text/javascript';
-      t.async = true;
-      t.id    = 'gauges-tracker';
-      t.setAttribute('data-site-id', '50678888613f5d5a6b00005b');
-      t.src = '//secure.gaug.es/track.js';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(t, s);
-    })();
-  </script>
+  <footer>
+    <p><a href="mailto:james@lovedthanlost.net">james@lovedthanlost.net</a></p>
+    <p>&copy; James Turnbull 2014–2026</p>
+  </footer>
+
 </body>
 </html>
